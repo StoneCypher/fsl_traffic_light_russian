@@ -1,0 +1,17 @@
+
+machine_name    : "Светофор";
+machine_author  : "Михайло Лесь / Mykhaylo Les / @miles91";
+machine_comment : "Translation of the 4-state traffic light to Russian";
+machine_license : MIT;
+fsl_version     : 1.0.0;
+
+
+
+
+
+Включено 'Выключить' -> Красный;
+
+Красный 'Перейти' => Зеленый 'Перейти' => Желтый 'Перейти' => Красный;
+
+[Зеленый Желтый Красный] 'Выключить' ~> Выключено;
+
